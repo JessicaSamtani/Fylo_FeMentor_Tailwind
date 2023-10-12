@@ -4,9 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./input.css" rel="stylesheet" />
-    <title>Tailwind Starter Jessica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fylo Tailwind Project</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="font-raleway ">
+    <div
+      class="main-wrapper flex flex-col items-center justify-center h-screen bg-mobileImage bg-no-repeat bg-cover md:flex-row"
+    >
+      <div
+        class="heading-wrapper bg-darkBlue w-[340px] h-52 p-10 mb-5 rounded-xl rounded-tr-[110px] md:mr-8 md:h-44"
+      >
+        <i><img class="fylo-logo mb-8" src="images/logo.svg" alt="logo" /></i>
+
+        <div class="small-logo-flex flex ">
+          <div class="icon1 bg-veryDarkBlue p-3.5 rounded-lg mr-4 md:p-2.5">
+            <img
+                class="document-icon"
+                src="images/icon-document.svg"
+                alt="document"
+            />
+          </div>
+          <div class="icon2 bg-veryDarkBlue p-3.5 rounded-lg flex justify-center items-center mr-4 md:p-2.5">
+            <img
+                class="folder-icon"
+                src="images/icon-folder.svg"
+                alt="folder"
+            /></i>
+          </div>
+          <div class="icon3 bg-veryDarkBlue p-3.5 rounded-lg flex justify-center items-center md:p-2.5">
+            <i
+              ><img
+                class="upload-icon"
+                src="images/icon-upload.svg"
+                alt="upload"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="storage-wrapper  bg-darkBlue p-12 pb-16 w-[340px] h-40 rounded-lg text-sm flex flex-col justify-center items-center md:w-[420px] md:h-36 md:items-start md:mt-2 ">
+        <p class="storage-info text-paleBlue font-extralight mt-28 ">
+          You’ve used <span class="font-bold">815 GB</span> of your storage
+        </p>
+        <div class="main-bluelevel-bar flex justify-start items-center bg-veryDarkBlue p-1 w-64 rounded-3xl mt-4 mb-3 md:w-80">
+          <div class="storage-pinklevel-bar flex justify-end items-center h-3 w-48 -ml-0.5 bg-gradient-to-r from-[hsl(6_100%_80%)] to-[hsl(335_100%_65%)] rounded-xl md:w-60">
+            <div class="small-white-ball h-2.5 rounded-full w-2.5 mx-0.5  bg-white"></div>
+          </div>
+        </div>
+
+        <div class="flex justify-between w-72 text-paleBlue text-xs mb-4 md:w-80">
+          <p class="font-bold">0 GB</p>
+          <p class="font-bold">1000 GB</p>
+        </div>
+
+        <div class="storage-left-text flex bg-white p-4 pl-8 pr-8 rounded-xl md:p-3 md:rounded-lg md:relative md:bottom-44 md:left-44">
+          <p class="font-bold text-4xl">185</p>
+          <p class="font-raleway uppercase text-xs ml-4 text-grayishBlue font-bold items-center justify-center flex">GB Left</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
